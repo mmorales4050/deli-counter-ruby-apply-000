@@ -17,8 +17,9 @@ end
 
 # Outputs a greeting, the person's number in line, and then adds them to the back of the line
 def take_a_number(people_in_line)
-  people_in_line << name
-  puts "Welcome, #{name}. You are number #{people_in_line.length} in line."
+  people_in_line << current_number
+  puts "Welcome, you are number #{current_number}. You are number #{people_in_line.length} in line."
+  current_number = current_number + 1
 end
 
 # Outputs who is currently being served and then removes them from the line
