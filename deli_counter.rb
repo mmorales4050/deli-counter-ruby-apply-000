@@ -1,6 +1,8 @@
 # Array containing people waiting to be served at deli
 katz_deli = []
 
+current_number = 1
+
 # Prints the number of people in line
 def line(people_in_line)
   if people_in_line == []
