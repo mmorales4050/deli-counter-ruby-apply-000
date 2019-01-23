@@ -16,7 +16,7 @@ def line(people_in_line)
 end
 
 # Outputs a greeting, the person's number in line, and then adds them to the back of the line
-def take_a_number(people_in_line, name)
+def take_a_number(people_in_line)
   people_in_line << name
   puts "Welcome, #{name}. You are number #{people_in_line.length} in line."
 end
