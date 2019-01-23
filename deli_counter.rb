@@ -7,17 +7,19 @@ def line(people_in_line)
     puts "The line is currently empty."
   else
     counter = 1
-    list_of_people = ""
-    people_in_line.each { |person| list_of_people = list_of_people + " #{counter}. #{person}"; counter = counter + 1}
-    puts "The line is currently:#{list_of_people}"
+    formatted_list_of_people = ""
+    people_in_line.each { |person| formatted_list_of_people = formatted_list_of_people + " #{counter}. #{person}"; counter = counter + 1}
+    puts "The line is currently:#{formatted_list_of_people}"
   end
 end
 
+# Outputs a greeting, the person's number in line, and then adds them to the back of the line
 def take_a_number(people_in_line, name)
   people_in_line << name
   puts "Welcome, #{name}. You are number #{people_in_line.length} in line."
 end
 
+# Outputs who is currently being served and then removes them from the line
 def now_serving(people_in_line)
   if people_in_line == []
     puts "There is nobody waiting to be served!"
